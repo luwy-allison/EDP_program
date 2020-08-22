@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.2),
-    on 八月 21, 2020, at 00:36
+    on 八月 23, 2020, at 00:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -38,7 +38,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2020.1.2'
 expName = 'EDP_test'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '001'}
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
     originPath='C:\\Users\\user\\Desktop\\TOM project\\EDP_program\\EDP_test_lastrun.py',
-    savePickle=True, saveWideText=False,
+    savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
 logFile = logging.LogFile(filename+'.log', level=logging.DATA)
@@ -2327,6 +2327,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "result"-------
 continueRoutine = True
+routineTimer.add(20.000000)
 # update component parameters for each repeat
 end_exp_key.keys = []
 end_exp_key.rt = []
@@ -2347,7 +2348,7 @@ resultClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
 # -------Run Routine "result"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = resultClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=resultClock)
@@ -2363,6 +2364,14 @@ while continueRoutine:
         image_rslt.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(image_rslt, 'tStartRefresh')  # time at next scr refresh
         image_rslt.setAutoDraw(True)
+    if image_rslt.status == STARTED:
+        # is it time to stop? (based on local clock)
+        if tThisFlip > 20-frameTolerance:
+            # keep track of stop time/frame for later
+            image_rslt.tStop = t  # not accounting for scr refresh
+            image_rslt.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(image_rslt, 'tStopRefresh')  # time at next scr refresh
+            image_rslt.setAutoDraw(False)
     
     # *end_exp_key* updates
     waitOnFlip = False
@@ -2377,6 +2386,14 @@ while continueRoutine:
         waitOnFlip = True
         win.callOnFlip(end_exp_key.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(end_exp_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if end_exp_key.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > end_exp_key.tStartRefresh + 20-frameTolerance:
+            # keep track of stop time/frame for later
+            end_exp_key.tStop = t  # not accounting for scr refresh
+            end_exp_key.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(end_exp_key, 'tStopRefresh')  # time at next scr refresh
+            end_exp_key.status = FINISHED
     if end_exp_key.status == STARTED and not waitOnFlip:
         theseKeys = end_exp_key.getKeys(keyList=['space'], waitRelease=False)
         _end_exp_key_allKeys.extend(theseKeys)
@@ -2407,14 +2424,13 @@ while continueRoutine:
 for thisComponent in resultComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-# the Routine "result" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
 win.flip()
 
 # these shouldn't be strictly necessary (should auto-save)
+thisExp.saveAsWideText(filename+'.csv')
 thisExp.saveAsPickle(filename)
 logging.flush()
 # make sure everything is closed down
