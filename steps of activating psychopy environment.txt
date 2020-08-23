@@ -1,5 +1,4 @@
 ''' dumpy method '''
-
 # step 1: open cmd and check python version
 > python --version
 #Python 3.7.6 (or above)
@@ -8,8 +7,9 @@
 > pip install -r requirements.txt
 
 # step 3: back to program files and run program
-double click 'EDP_stage1.psyexp'
-or use cmd 'python EDP_stage1.py'
+use cmd 'python EDP_stage1.py'
+
+
 
 ''' create virtual environment method '''
 # step 1: open cmd and check python version
@@ -30,7 +30,6 @@ or use cmd 'python EDP_stage1.py'
 > pip install -r requirements.txt
 
 # step 6: back to program files and run program
-double click 'EDP_stage1.psyexp'
-or use cmd 'python EDP_stage1.py'
+use cmd 'python EDP_stage1.py'
 
 
