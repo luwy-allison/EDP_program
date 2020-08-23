@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.2),
-    on 八月 23, 2020, at 00:37
+    on 八月 23, 2020, at 16:10
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -84,7 +84,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instruction"
 instructionClock = core.Clock()
 text_ins = visual.TextStim(win=win, name='text_ins',
-    text='hello\n     \npress space to start\n',
+    text='Ready\n     \nClick OK to start\n',
     font='Arial',
     pos=(0, 0), height=40, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -113,7 +113,7 @@ interface_1 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_1 = visual.Slider(win=win, name='slider_1',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(-2000,0),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -148,7 +148,7 @@ interface_2 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_2 = visual.Slider(win=win, name='slider_2',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -183,7 +183,7 @@ interface_3 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_3 = visual.Slider(win=win, name='slider_3',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(-2000, 0),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -225,7 +225,7 @@ interface_4 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_4 = visual.Slider(win=win, name='slider_4',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -267,7 +267,7 @@ interface_5 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_5 = visual.Slider(win=win, name='slider_5',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -309,7 +309,7 @@ interface_6 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_6 = visual.Slider(win=win, name='slider_6',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -351,7 +351,7 @@ interface_7 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_7 = visual.Slider(win=win, name='slider_7',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -393,7 +393,7 @@ interface_8 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_8 = visual.Slider(win=win, name='slider_8',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -435,7 +435,7 @@ interface_9 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_9 = visual.Slider(win=win, name='slider_9',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -477,7 +477,7 @@ interface_10 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_10 = visual.Slider(win=win, name='slider_10',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -526,7 +526,7 @@ interface_11 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_11 = visual.Slider(win=win, name='slider_11',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',

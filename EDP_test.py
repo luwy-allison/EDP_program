@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.2),
-    on 八月 21, 2020, at 00:12
+    on 八月 23, 2020, at 16:16
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -38,7 +38,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2020.1.2'
 expName = 'EDP_test'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '001'}
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -56,7 +56,7 @@ thisExp = data.ExperimentHandler(name=expName, version='',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
-logFile = logging.LogFile(filename+'.log', level=logging.DEBUG)
+logFile = logging.LogFile(filename+'.log', level=logging.DATA)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
 
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
@@ -84,7 +84,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instruction"
 instructionClock = core.Clock()
 text_ins = visual.TextStim(win=win, name='text_ins',
-    text='hello\n     \npress space to start\n',
+    text='Ready\n     \nClick OK to start\n',
     font='Arial',
     pos=(0, 0), height=40, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -113,9 +113,9 @@ interface_1 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_1 = visual.Slider(win=win, name='slider_1',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(-2000,0),
-    granularity=1, style=('rating', 'whiteOnBlack'),
+    granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
     flip=False)
 ratingText_1 = visual.TextStim(win=win, name='ratingText_1',
@@ -148,7 +148,7 @@ interface_2 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_2 = visual.Slider(win=win, name='slider_2',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -183,7 +183,7 @@ interface_3 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_3 = visual.Slider(win=win, name='slider_3',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(-2000, 0),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -209,7 +209,7 @@ OKbutton_3 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_3 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_3.mouseClock = core.Clock()
@@ -225,7 +225,7 @@ interface_4 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_4 = visual.Slider(win=win, name='slider_4',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -251,7 +251,7 @@ OKbutton_4 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_4 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_4.mouseClock = core.Clock()
@@ -267,7 +267,7 @@ interface_5 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_5 = visual.Slider(win=win, name='slider_5',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -293,7 +293,7 @@ OKbutton_5 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_5 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_5.mouseClock = core.Clock()
@@ -309,7 +309,7 @@ interface_6 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_6 = visual.Slider(win=win, name='slider_6',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -335,7 +335,7 @@ OKbutton_6 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_6 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_6.mouseClock = core.Clock()
@@ -351,7 +351,7 @@ interface_7 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_7 = visual.Slider(win=win, name='slider_7',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -377,7 +377,7 @@ OKbutton_7 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_7 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_7.mouseClock = core.Clock()
@@ -393,7 +393,7 @@ interface_8 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_8 = visual.Slider(win=win, name='slider_8',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -419,7 +419,7 @@ OKbutton_8 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_8 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_8.mouseClock = core.Clock()
@@ -435,7 +435,7 @@ interface_9 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_9 = visual.Slider(win=win, name='slider_9',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -461,7 +461,7 @@ OKbutton_9 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-4.0)
 mouse_9 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_9.mouseClock = core.Clock()
@@ -477,7 +477,7 @@ interface_10 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_10 = visual.Slider(win=win, name='slider_10',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -510,7 +510,7 @@ OKbutton_10 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-5.0)
 mouse_10 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_10.mouseClock = core.Clock()
@@ -526,7 +526,7 @@ interface_11 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
 slider_11 = visual.Slider(win=win, name='slider_11',
-    size=(400,50), pos=(254.1, -151.5), units=None,
+    size=(400,50), pos=(263.5, -151.5), units=None,
     labels=None, ticks=(0, 2000),
     granularity=1, style=['rating', 'whiteOnBlack'],
     color='LightGray', font='HelveticaBold',
@@ -559,7 +559,7 @@ OKbutton_11 = visual.ImageStim(
     ori=0, pos=(0, -300), size=(150,76),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
+    texRes=128, interpolate=True, depth=-5.0)
 mouse_11 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_11.mouseClock = core.Clock()
@@ -692,7 +692,7 @@ for thisComponent in instructionComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 # the Routine "instruction" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -818,7 +818,7 @@ thisExp.addData('slider_1.stopped', slider_1.tStopRefresh)
 thisExp.addData('ratingText_1.started', ratingText_1.tStartRefresh)
 thisExp.addData('ratingText_1.stopped', ratingText_1.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 L = slider_1.markerPos
 # the Routine "trial_1" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -945,7 +945,7 @@ thisExp.addData('slider_2.stopped', slider_2.tStopRefresh)
 thisExp.addData('ratingText_2.started', ratingText_2.tStartRefresh)
 thisExp.addData('ratingText_2.stopped', ratingText_2.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x1pos = slider_2.markerPos
 
 # the Routine "trial_2" was not non-slip safe, so reset the non-slip timer
@@ -1084,7 +1084,7 @@ thisExp.addData('slider_3.stopped', slider_3.tStopRefresh)
 thisExp.addData('ratingText_3.started', ratingText_3.tStartRefresh)
 thisExp.addData('ratingText_3.stopped', ratingText_3.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x2pos = slider_3.markerPos
 # the Routine "trial_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1222,7 +1222,7 @@ thisExp.addData('slider_4.stopped', slider_4.tStopRefresh)
 thisExp.addData('ratingText_4.started', ratingText_4.tStartRefresh)
 thisExp.addData('ratingText_4.stopped', ratingText_4.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x3pos = slider_4.markerPos
 # the Routine "trial_4" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1360,7 +1360,7 @@ thisExp.addData('slider_5.stopped', slider_5.tStopRefresh)
 thisExp.addData('ratingText_5.started', ratingText_5.tStartRefresh)
 thisExp.addData('ratingText_5.stopped', ratingText_5.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x2posd = slider_5.markerPos
 # the Routine "trial_5" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1498,7 +1498,7 @@ thisExp.addData('slider_6.stopped', slider_6.tStopRefresh)
 thisExp.addData('ratingText_6.started', ratingText_6.tStartRefresh)
 thisExp.addData('ratingText_6.stopped', ratingText_6.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x3posd = slider_6.markerPos
 # the Routine "trial_6" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1636,7 +1636,7 @@ thisExp.addData('slider_7.stopped', slider_7.tStopRefresh)
 thisExp.addData('ratingText_7.started', ratingText_7.tStartRefresh)
 thisExp.addData('ratingText_7.stopped', ratingText_7.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x1neg = slider_7.markerPos
 # the Routine "trial_7" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1774,7 +1774,7 @@ thisExp.addData('slider_8.stopped', slider_8.tStopRefresh)
 thisExp.addData('ratingText_8.started', ratingText_8.tStartRefresh)
 thisExp.addData('ratingText_8.stopped', ratingText_8.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x2neg = slider_8.markerPos
 # the Routine "trial_8" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -1912,7 +1912,7 @@ thisExp.addData('slider_9.stopped', slider_9.tStopRefresh)
 thisExp.addData('ratingText_9.started', ratingText_9.tStartRefresh)
 thisExp.addData('ratingText_9.stopped', ratingText_9.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x3neg = slider_9.markerPos
 # the Routine "trial_9" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -2060,7 +2060,7 @@ thisExp.addData('slider_10.stopped', slider_10.tStopRefresh)
 thisExp.addData('ratingText_10.started', ratingText_10.tStartRefresh)
 thisExp.addData('ratingText_10.stopped', ratingText_10.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x2negd = slider_10.markerPos
 # the Routine "trial_10" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
@@ -2208,7 +2208,7 @@ thisExp.addData('slider_11.stopped', slider_11.tStopRefresh)
 thisExp.addData('ratingText_11.started', ratingText_11.tStartRefresh)
 thisExp.addData('ratingText_11.stopped', ratingText_11.tStopRefresh)
 # store data for thisExp (ExperimentHandler)
-thisExp.nextEntry()
+
 x3negd = slider_11.markerPos
 
 # the Routine "trial_11" was not non-slip safe, so reset the non-slip timer
@@ -2322,6 +2322,10 @@ plt.plot(xneg, utilityneg(negxneg, alphaneg[0]), 'b-',label = alphaneg[0])
 plt.legend()
 plt.savefig(filename+'.png')
 image_rslt.image = filename+'.png'
+
+thisExp.addData('alphapos', alphapos)
+thisExp.addData('alphaneg', alphaneg)
+thisExp.nextEntry()
 # the Routine "end" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
