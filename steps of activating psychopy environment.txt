@@ -1,4 +1,4 @@
-''' dumpy method '''
+''' dumb method '''
 # step 1: open cmd and check python version
 > python --version
 #Python 3.7.6 (or above)
